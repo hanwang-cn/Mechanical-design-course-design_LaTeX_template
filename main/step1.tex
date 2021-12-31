@@ -1,0 +1,147 @@
+\subsection{草图第一阶段}
+\subsubsection{间距确定}
+取\uppercase\expandafter{\romannumeral2}轴上两齿轮轴向间距$\Delta_4=10$，取中间轴上齿轮2端面至机体内壁的距离$\Delta_5=10$。
+\subsubsection{\uppercase\expandafter{\romannumeral1}轴系部件设计}
+\begin{enumerate}[i]
+	\item 初选轴径$d_{min}$，并根据相配联轴器的尺寸确定轴径$d_1$和长度$L_1$
+	\par 对于转轴，按扭转强度初算轴径，由参考文献[2]表9.4得，C=106~118，考虑轴端弯矩比转矩小，取C= 106，则$$d_{\min}=C\sqrt[3]{\frac{P}{n}}\approx 12.86$$
+	\par 由于电机输出轴直径是28，经过联轴器的选取确定\uppercase\expandafter{\romannumeral1}轴的最小轴径是20。
+	
+	\item 选择轴的材料
+	\par 因齿轮和轴径相差不大，所以制成齿轮轴，轴的材料也是40Cr。
+	
+	\item 确定轴的轴向固定方式
+	\par 因为齿轮减速器输出轴的跨距不大，且工作温度变化不大，故轴向固定采用两端固定方式。
+	
+	\item 联轴器及轴段\textcircled{1}
+	\par 前面计算的$d_{min}$即为轴段\textcircled{1}的直径，又考虑轴段\textcircled{1}上安装联轴器，因此轴段\textcircled{1}的设计与联轴器的设计同时进行。
+	\par 由前面设计可知，选用弹性柱销联轴器。	
+	\par 由参考文献\cite{1}表13.1查询可得GB/T 5014-2003中的LX2型弹性柱销联轴器符合要求，其参数为：公称转矩560$\mathrm{N}\cdot \mathrm{m}$，许用转速为6300，轴孔直径范围是$20\sim 35$。满足电动机轴径要求。取与电动机轴相连端轴径28，轴孔长度62，J型轴孔，选用A型键，联轴器主动端代号为LX2~28×62~GB/T~5014。
+	\par 相应的，轴段\textcircled{1}的直径$d_1=20$，轴段长度应该比联轴器略短，故取其长度为$l_1=61$
+	
+	\item 密封圈与轴段\textcircled{2}
+	\par 联轴器右端采用轴肩固定，取轴肩高度$h=2.45\sim 3.5$，相应的轴段②的直径范围为$24.9\sim 27$，查机械设计手册，选用轴径为25的唇型圈油封中，则轴段②的直径$d_2=25$。
+	
+	\item 轴承与轴段\textcircled{2}及轴段\textcircled{6}
+	\par 由前面设计知，轴承类型为深沟球轴承，暂取轴承型号为6205，由参考文献\cite{1}表12.1查得内径$d=25$，外径$D=52$，宽度$B=15$，故轴段\textcircled{2}的直径$d_2=25$。
+	轴段\textcircled{6}的直径应与轴段\textcircled{2}相同，即$d_6=25$。
+	
+	\item 轴段\textcircled{3}及轴段\textcircled{5}
+	\par 取过渡轴段$d_3=d_5=27$。
+	
+	\item 机体与轴段\textcircled{2}\textcircled{3}\textcircled{5}\textcircled{6}的长度
+	\par 因采用凸缘式轴承盖，其凸缘厚度$e=8$。由于所选联轴器不影响轴承端盖螺栓的拆卸，轴肩与轴承端盖之间的间隙取$K=18$。
+	\par 在确定齿轮、机体、轴承、轴承盖的相互位置与尺寸之后，即可确定各轴段的长度。
+	轴段\textcircled{2}\textcircled{6}的长度 $l_2=75$，$l_6=20$；
+	轴段\textcircled{2}的长度$l_2=75$ ；
+	轴段\textcircled{3}的长度 $l_3=78$。
+	\par 轴的各部分尺寸均确定。取联轴器轮毂中间位置为力的作用点，可得跨距$A_1=42.5$，$B_1=100.5$，$C_1=98.5$。 
+	\par 轴段\textcircled{4}长度为$l_4=30$，由于是齿轮轴所以认为轴径为齿轮分度圆的尺寸。
+	\par 完成的结构草图如下所示：
+	\begin{figure}[H]
+		\begin{center}
+			\caption{轴\uppercase\expandafter{\romannumeral1}的结构草图}
+			\includegraphics[width=\textwidth]{pic/zhou1.png}
+		\end{center}
+	\end{figure}
+\end{enumerate}
+\subsubsection{\uppercase\expandafter{\romannumeral2}轴轴系部件设计}
+\begin{enumerate}[i]
+	\item 选择轴的材料
+	\par 因传递功率不大，且对质量与结构尺寸无特殊要求，故选用45钢并进行调质处理。
+
+	\item 初选轴径$d_{min}$，并根据相配联轴器的尺寸确定轴径$d_1$和长度$L_1$
+	\par 对于转轴，按扭转强度初算轴径，由参考文献[2]表9.4得，C=106~118，考虑轴端弯矩比转矩小，取C= 106，则$$d_{\min}=C\sqrt[3]{\frac{P}{n}}\approx 21.48$$
+	\par 考虑键槽影响，将计算值加大5\%，取$d_{\min}=25$。
+	
+	\item 确定轴的轴向固定方式
+	\par 因为齿轮减速器输出轴的跨距不大，且工作温度变化不大，故轴向固定采用两端固定方式。
+	
+	\item 	轴承与轴段\textcircled{1}及轴段\textcircled{5}
+	\par 由前面设计知，轴承类型为深沟球轴承，取轴承型号为6205，由参考文献\cite{1}表12.4表12.1查得内径$d=25$，外径$D=52$，宽度$B=15$，故轴段\textcircled{1}的直径$d1=25$。
+	\par 轴段\textcircled{5}的直径应与轴段\textcircled{1}相同，即$d_5=25$。
+
+	\item 齿轮c与轴段\textcircled{2}
+	\par 为了便于齿轮的安装，$d_2$应略大于$d_1$，取$d_2=30$ ，齿轮c左端用套筒固定，则轴段\textcircled{2}的长度应略小于齿轮3的宽度$b_c$，取$l_2=58$。
+	
+	\item 轴段\textcircled{3}
+	\par 齿轮c右端用轴肩固定，轴肩高度$h=2.45\sim 3.5$，取相应的轴段\textcircled{3}的直径范围为$38.9\sim 41$，故$d_3=36$。 
+	
+	\item 齿轮b与轴段\textcircled{4}
+	\par 齿轮b左端也用轴肩固定。可取$d_4=30$，齿轮b右端用套筒固定，则轴段\textcircled{4}的长度应略小于齿轮b的宽度$b_b$，取轴段\textcircled{4}的长度$l_4=23$。
+	
+	\item 轴段\textcircled{1}\textcircled{5}的长度
+	\par 由草图得$l_1=37$，$l_5=40$。
+	\par 轴的各部分尺寸均确定。取联轴器轮毂中间位置为力的作用点，可得跨距$A_2=69$，$B_2=52.5$，$C_2=57.5$。 
+	完成的结构草图如下所示:
+	\begin{figure}[H]
+		\begin{center}
+			\caption{轴\uppercase\expandafter{\romannumeral2}的结构草图}
+			\includegraphics[width=\textwidth]{pic/zhou2.png}
+		\end{center}
+	\end{figure}
+	(9)	键连接设计
+	齿轮b、齿轮c与轴之间采用A型普通平键连接，型号分别为：\\
+	键 $8\times 20$~GB/T~1096-2003，$h=7$ ，$t=4.0$ \\
+	键  $8\times 56$~GB/T~1096-2003，$h=7$ ，$t=4.0$
+\end{enumerate}
+\subsubsection{\uppercase\expandafter{\romannumeral3}轴轴系部件设计}
+\begin{enumerate}[i]
+	\item 选择轴的材料
+	\par 因传递功率不大，且对质量与结构尺寸无特殊要求，故选用45钢并进行调质处理。
+
+	\item 初选轴径$d_{min}$，并根据相配联轴器的尺寸确定轴径$d_1$和长度$L_1$
+	\par 对于转轴，按扭转强度初算轴径，由参考文献[2]表9.4得，$C=106\sim 118$，考虑轴端弯矩比转矩小，取C= 106，则$$d_{\min}=C\sqrt[3]{\frac{P}{n}}\approx 31.78$$
+
+	\item 	确定轴的轴向固定方式
+	\par 因为齿轮减速器输出轴的跨距不大，且工作温度变化不大，故轴向固定采用两端固定方式。
+	
+	\item 联轴器及轴段\textcircled{1}
+	\par 前面计算的$d_{min}$即为轴段\textcircled{1}的直径，又考虑轴段\textcircled{1}上安装联轴器，因此轴段\textcircled{1}的设计与联轴器的设计同时进行。
+	\par 由前面设计可知，选凸缘联轴器。由参考文献\cite{1}表13.4查询可得GB/T~5843-2003中公称转矩500 $\mathrm{N}\cdot \mathrm{m}$的凸缘联轴器满足要求，其许用转速为8000，轴孔直径范围是$30\sim 42$。取与轴相连端轴径32，轴孔长度为$L_1=70=82$，J型轴孔。相应的，轴段\textcircled{1}的直径$d_1=32$，取其长度为$l_1=82$。
+	
+	\item 密封圈与轴段\textcircled{2}
+	\par 联轴器右端采用轴肩固定，取轴肩高度$h=2.52\sim 3.6$。查机械设计手册，选用轴径为35的唇型密封圈，则轴段②的直径$d_2=35$。
+	
+	\item 轴承与轴段\textcircled{2}及轴段\textcircled{6}
+	\par 由前面设计知，轴承类型为深沟球轴承，取轴承型号为6207，由参考文献\cite{1}表12.1查得内径$d=35$，外径$D=72$，宽度$B=17$。故轴段\textcircled{2}的直径$d_2=35$。
+	\par 轴段\textcircled{6}的直径应与轴段③\textcircled{2}相同，即$d_6=45$。
+	
+	\item 轴段\textcircled{5}
+	\par 为了便于齿轮的安装，$d_5$应略大于$d_6$，取$d_5=40$，齿轮c右端用套筒固定，则轴段\textcircled{5}的长度应略小于齿轮d的宽度$b_d$，取$l_5=53$。
+	
+	\item 轴段\textcircled{4}
+	\par 齿轮d右端用轴肩固定，取轴肩高度$h=3.36\sim 4.8$，取轴段\textcircled{4}的直径$d_4=46$。
+	
+	\item 轴段\textcircled{3}
+	\par 取过渡轴段\textcircled{3}直径$d_3=40$。
+	
+	\item 机体与轴段\textcircled{2}\textcircled{3}\textcircled{4}\textcircled{6}的长度
+	\par 因采用凸缘式轴承盖，其凸缘厚度$e=8 $。由于所选联轴器不影响轴承端盖螺栓的拆卸，轴肩与轴承端盖之间的间隙取$K=14 $。
+	\par 在确定齿轮、机体、轴承、轴承盖的相互位置与尺寸之后，即可确定各轴段的长度。
+	\par 取轴段\textcircled{2}的长度$l_2=65$；
+	由草图得：轴段\textcircled{6}的长度$l_6=42$；轴段\textcircled{3}的长度$l_3=53$.取轴段\textcircled{4}的长度$l_4=10$。
+	\par 轴的各部分尺寸均确定。取联轴器轮毂中间位置为力的作用点，可得跨距$A_3=97.5$，$B_3=96$，$C_3=59$。 
+	\par 完成的结构草图如下所示。
+	\begin{figure}[H]
+		\begin{center}
+			\caption{轴\uppercase\expandafter{\romannumeral3}的结构草图}
+			\includegraphics[width=\textwidth]{pic/zhou3.png}
+		\end{center}
+	\end{figure}
+	\item 键连接设计
+	\par 联轴器和齿轮d与轴之间采用A型普通平键连接，型号分别为：\\
+	键 $10\times 80$~GB/T~1096-2003，$h=8$ ，$t=5.0$ \\
+	键  $12\times 50$~GB/T~1096-2003，$h=8$ ，$t=5.0$ 
+	
+\end{enumerate}
+
+\subsubsection{轴系部件校核计算}
+\begin{enumerate}[i]
+	\item 对\uppercase\expandafter{\romannumeral1}轴的校核
+	\input{main/check1}	
+	\item 对\uppercase\expandafter{\romannumeral3}轴的校核
+	\input{main/check3}
+	\item 对\uppercase\expandafter{\romannumeral2}轴的校核
+	\input{main/check2}
+\end{enumerate}
