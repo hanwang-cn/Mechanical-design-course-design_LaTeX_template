@@ -1,0 +1,37 @@
+\documentclass[12pt,a4paper,UTF8]{ctexart}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{enumerate}
+{\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin {table}{section} }
+\usepackage{float}
+\usepackage{booktabs}
+\addtolength{\parskip}{.5em}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\author{王瀚}
+\title{带式运输机传动装置设计}
+
+\begin{document}
+	\input{main/cover}
+	\newpage
+	\tableofcontents
+	\newpage
+	\section{传动装置的总体设计}
+		\input{main/overall}
+	\section{传动件设计}
+		\input{main/transmission}
+	\section{减速器装配草图的设计}
+		\input{main/step0}
+		\input{main/step1}
+		\input{main/step2}
+		\input{main/step3}
+	\section{结语和参考文献}
+		\input{main/ending}
+	\newpage
+	\bibliographystyle{plain}
+	\bibliography{ref}
+\end{document}
